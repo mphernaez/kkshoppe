@@ -67,7 +67,7 @@ class Order(models.Model):
             self.code = uuid.uuid4().hex[:6].upper()
         return super(Order, self).save(*args, **kwargs)
 
-    def get_items(self)
+    def get_items(self):
         return ItemOrder.objects.filter(order=self)
 
     def get_statuses(self):
