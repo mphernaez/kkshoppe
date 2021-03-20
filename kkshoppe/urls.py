@@ -15,7 +15,14 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from main import views as vmain
+from app_inventory import views as vinventory
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', vmain.index),
+    path('login', vmain.user_login),
+    path('logout', vmain.user_logout),
+    path('dashboard', vmain.dashboard),
+    path('inventory', vinventory.inventory)
 ]

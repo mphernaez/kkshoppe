@@ -1,0 +1,32 @@
+{% extends "../base.html" %}
+{% load static %}
+{% block style %}
+{% endblock style %}
+{% block content %}
+
+{% include 'components/navigation.html' %}
+
+<div class="main">
+    <h1>Inventory</h1>
+    <button type="button" class="btn btn-pink">
+        <i class="fas fa-plus-circle"></i>
+        <span class="pl-1">Add new item</span>
+    </button>
+
+    <div class="mt-5">
+        <div class="inventory-filter float-right mb-3">
+            <!-- <form action="">
+                <input type="text" class="form-control"/>
+                <input type="text" class="form-control" data-role="tagsinput"/> 
+            </form> -->
+            <button type="button" class="btn btn-info">
+                <i class="fas fa-filter"></i>
+                <span class="pl-1">Filter</span>
+            </button>
+        </div>
+        {% include 'components/inventory/inventory_table.html' %}
+    </div>
+
+</div>
+
+{% endblock content %}

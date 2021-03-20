@@ -1,0 +1,84 @@
+.sidenav {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #1f1f1f;
+    overflow: hidden;
+    padding-top: 20px;
+}
+
+.sidenav-logo{
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    color: white;
+    font-size: xx-large;
+}
+
+.sidenav-items{
+    /* height: 10px; */
+}
+
+.sidenav-items-list {
+    list-style-type: none;
+    
+}
+
+.sidenav-items-list li{
+    padding-bottom: 15px;
+}
+
+.sidenav-items-list li a{
+    color: rgb(82, 82, 82);
+    font-size: 20px;
+}
+
+.sidenav-items-list li a.is-active{
+    color: white  !important;
+    font-size: 20px;
+}
+
+.sidenav-items-list li a:hover{
+    text-decoration: none;
+}
+
+.topnav{
+    margin-left: 250px;
+    height: 60px;
+    background-color: #EFEFEF;
+}
+
+.navbar-text{
+    color: rgb(31, 31, 31);
+}
+
+.navbar-text:hover{
+    text-decoration: none;
+}
+
+.main{
+    margin-top: 50px;
+    margin-left: 250px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 20px;
+}
+
+.btn-pink{
+    background-color: rgb(255, 160, 184);
+    color: white;
+}   
+
+.text-pink{
+    color: rgb(255, 160, 184);
+}
+
+.inventory-filter-items{
+    background-color: #EFEFEF;
+    margin: auto;
+    padding: 10px;
+    height: 100px;
+}
