@@ -24,5 +24,6 @@ urlpatterns = [
     path('login', vmain.user_login),
     path('logout', vmain.user_logout),
     path('dashboard', vmain.dashboard),
-    path('inventory', vinventory.inventory)
+    path('inventory', vinventory.inventory),
+    path('inventory/<str:code>/', vinventory.item),
 ]
